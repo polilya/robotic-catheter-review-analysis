@@ -54,7 +54,9 @@ In the published version, correlations between quantitative parameters use the P
 
 **Fig. 9.** (a) How often mechanisms are implemented together in the same robotic catheter. (b, c) Correlation between the use of secondary-unit mechanisms for rotation (b) and translation (c) and an increase in quantitative parameters.
 
-![Heatmap of combined implementation of mechanisms and correlation plots](figures/fig9-mechanism-heatmap-correlations.jpg)
+<p align="center">
+  <img src="figures/fig9-mechanism-heatmap-correlations.jpg" width="560" alt="Heatmap of combined implementation of mechanisms and correlation plots">
+</p>
 
 **Fig. 5 and 6.** Timeline of robotic catheter evolution: every version with its mechanisms and features.
 
@@ -64,7 +66,9 @@ In the published version, correlations between quantitative parameters use the P
 
 **Fig. 8.** Accuracy of robotic catheters in translation and rotation: trueness and precision.
 
-![Accuracy characteristics of robotic catheters](figures/fig8-accuracy.jpg)
+<p align="center">
+  <img src="figures/fig8-accuracy.jpg" width="560" alt="Accuracy characteristics of robotic catheters">
+</p>
 
 Figures reproduced from the open-access article, © 2024 The Authors, published by Elsevier B.V. under a Creative Commons license.
 
