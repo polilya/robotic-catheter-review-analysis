@@ -12,15 +12,18 @@ Data on each robotic catheter version was entered into per-article tables, manua
 
 This repository holds the analysis notebook and a working snapshot of the merged dataset (February 2023, 99 versions). The published review uses the final, larger dataset.
 
-## Data
+## Repository structure
 
-| File | Contents |
-|---|---|
-| `df10_2 3.csv` | Mechanisms and features of each robotic catheter version (snapshot: 99 versions, 2011–2021) |
-| `Korrelyatsia_dannye.xlsx` | Quantitative parameters: maximum translation and rotation, translation and rotation speed, and related values |
-| `*.png`, `pici/` | Pictogram for each mechanism type from the review's classification, used as axis labels |
+```
+├── robotic_catheter_review.ipynb   analysis notebook
+├── data/
+│   ├── catheter_mechanisms.csv     mechanisms and features of each version (snapshot: 99 versions, 2011–2021)
+│   └── catheter_parameters.xlsx    quantitative parameters: maximum translation and rotation, speeds
+├── pictograms/                     pictogram for each mechanism type, used as axis labels
+└── figures/                        figures from the published review
+```
 
-### Columns
+## Dataset columns
 
 A robotic catheter has a **primary** (master) unit next to the surgeon and a **secondary** (slave) unit that moves the instrument. Each unit has an **actuation** channel and a **feedback** channel, along a **translational** and a **rotational** degree of freedom. The column names encode this:
 
@@ -74,7 +77,7 @@ Figures reproduced from the open-access article, © 2024 The Authors, published 
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn openpyxl pillow joypy heatmapz
-jupyter notebook Robotic_catheter_review.ipynb
+jupyter notebook robotic_catheter_review.ipynb
 ```
 
 ## Author
