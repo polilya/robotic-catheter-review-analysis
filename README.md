@@ -10,17 +10,20 @@ The review follows PRISMA 2020: 1,500 records were screened, and 197 reports wer
 
 Data on each robotic catheter version was entered into per-article tables, manually or automatically. The code parses these tables into one dataset, encodes the mechanisms and builds the review's statistics and figures. When the tables were updated, rerunning the code rebuilt the figures.
 
-This repository holds the analysis notebook and a working snapshot of the merged dataset (February 2023, 99 versions). The published review uses the final, larger dataset.
+The main notebook is the final analysis from the 2024 revision, run on the dataset of the published review: 130 robotic catheter versions, 2011–2023. The analysis from the first submission (February 2023, 99 versions) is kept in `archive/`.
 
 ## Repository structure
 
 ```
-├── robotic_catheter_review.ipynb   analysis notebook
+├── robotic_catheter_review.ipynb        final analysis (2024 revision, 130 versions)
 ├── data/
-│   ├── catheter_mechanisms.csv     mechanisms and features of each version (snapshot: 99 versions, 2011–2021)
-│   └── catheter_parameters.xlsx    quantitative parameters: maximum translation and rotation, speeds
-├── pictograms/                     pictogram for each mechanism type, used as axis labels
-└── figures/                        figures from the published review
+│   ├── catheter_mechanisms.csv          mechanisms and features of each version (130 versions, 2011–2023)
+│   ├── catheter_parameters.xlsx         quantitative parameters: maximum translation and rotation, speeds, accuracy
+│   └── catheter_mechanisms_2023.csv     dataset of the first submission (99 versions, 2011–2021)
+├── archive/
+│   └── robotic_catheter_review_2023.ipynb   analysis of the first submission
+├── pictograms/                          pictogram for each mechanism type, used as axis labels
+└── figures/                             figures from the published review
 ```
 
 ## Dataset columns
